@@ -1,0 +1,124 @@
+@import "_config.scss";
+
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: rgba(240,240,240,0);
+  color: $white;
+  height: 90px;
+}
+
+.logo {
+  position: relative;
+  display: inline-block;
+  left: 20px;
+  @include translateY(-20%);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.header-name {
+  position: relative;
+  display: inline-block;
+  margin-left: 35px;
+  top: 50%;
+  @include translateY(-50%);
+}
+
+nav, nav ul, nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  @include translateY(-70%);
+
+  ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+
+    &.last {
+      margin: 0;
+    }
+
+    a {
+      font-size: 19px;
+      line-height: normal;
+      color: $white;
+    }
+  }
+}
+
+.home {
+  display: inline-block;
+}
+
+.splash {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  margin-top: -200px;
+  z-index: -1;
+  background-image: url("../../Assets/img/macbookhands.jpg");
+  background-image: linear-gradient(to bottom, rgba(0,0,0,1) 15%, rgba(0,0,0,0.1)),
+    url("../../Assets/img/bigmacbook.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.splash-text {
+  position: relative;
+  width: 100%;
+  padding-top: 370px;
+  color: white;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 300;
+}
+
+.slant {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-top: 57px;
+
+  polygon {
+    fill: $white;
+  }
+}
+
+.splash-face {
+  position: relative;
+  display: block;
+  margin-top: -280px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  height: 300px;
+  border: 6px solid #eee;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.home-content {
+  margin-top: 50px;
+  padding-left: auto;
+  padding-right: auto;
+  width: 70%;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+footer {
+  position: relative;
+}
