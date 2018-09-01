@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 // components
-import Header from './components/headerComponent/header';
-import Footer from './components/footerComponent/footer';
+import Header from './components/header';
+import Footer from './components/footer';
 import Homepage from './components/pages/homePage';
 import Projects from './components/pages/projects';
 
@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header />
+          <Header/>
 
           <Route exact path="/" component={Homepage} />
           <Route exact path="/Projects" component={Projects} />

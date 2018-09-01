@@ -1,32 +1,34 @@
 @import "_config.scss";
 
+/* header.js */
+
 header {
   position: relative;
   display: block;
   width: 100%;
-  background-color: rgba(240,240,240,0);
+  background-color: rgba(0,0,0,0);
   color: $white;
   height: 90px;
-}
 
-.logo {
-  position: relative;
-  display: inline-block;
-  left: 20px;
-  @include translateY(-20%);
-}
+  .logo {
+    position: relative;
+    display: inline-block;
+    left: 20px;
+    @include translateY(-20%);
+  }
 
-.logo img {
-  width: 50px;
-  height: 50px;
-}
+  img {
+    width: 50px;
+    height: 50px;
+  }
 
-.header-name {
-  position: relative;
-  display: inline-block;
-  margin-left: 35px;
-  top: 50%;
-  @include translateY(-50%);
+  .header-name {
+    position: relative;
+    display: inline-block;
+    margin-left: 35px;
+    top: 50%;
+    @include translateY(-50%);
+  }
 }
 
 nav, nav ul, nav ul li {
@@ -57,68 +59,147 @@ nav {
   }
 }
 
+/* Homepage */
+
 .home {
   display: inline-block;
-}
 
-.splash {
-  position: relative;
-  width: 100%;
-  height: 800px;
-  margin-top: -200px;
-  z-index: -1;
-  background-image: url("../../Assets/img/macbookhands.jpg");
-  background-image: linear-gradient(to bottom, rgba(0,0,0,1) 15%, rgba(0,0,0,0.1)),
-    url("../../Assets/img/bigmacbook.jpg");
-  background-size: cover;
-  background-position: center;
-}
+  .splash {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin-top: -200px;
+    z-index: -1;
+    background-image: url("../../Assets/img/bigmacbook.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1) 15%, rgba(0,0,0,0.1)),
+      url("../../Assets/img/bigmacbook.jpg");
+    background-size: cover;
+    background-position: center;
 
-.splash-text {
-  position: relative;
-  width: 100%;
-  padding-top: 370px;
-  color: white;
-  text-align: center;
-  font-size: 54px;
-  font-weight: 300;
+    .splash-text {
+      position: relative;
+      width: 100%;
+      padding-top: 370px;
+      color: white;
+      text-align: center;
+      font-size: 54px;
+      font-weight: 300;
+    }
+
+    .slant {
+      margin-top: 58px;
+
+      polygon {
+        fill: $white;
+      }
+    }
+
+    .splash-face {
+      position: relative;
+      display: block;
+      margin-top: -280px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 240px;
+      height: 300px;
+      border: 6px solid #eee;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .home-content {
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    padding-left: auto;
+    padding-right: auto;
+    width: 70%;
+    z-index: 2;
+
+    h1 {
+      text-align: center;
+      z-index: 3;
+    }
+  }
 }
 
 .slant {
   position: relative;
   width: 100%;
   height: 300px;
-  margin-top: 57px;
-
-  polygon {
-    fill: $white;
-  }
 }
 
-.splash-face {
-  position: relative;
-  display: block;
-  margin-top: -280px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 240px;
-  height: 300px;
-  border: 6px solid #eee;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.home-content {
-  margin-top: 50px;
-  padding-left: auto;
-  padding-right: auto;
-  width: 70%;
-
-  h1 {
-    text-align: center;
-  }
-}
+/* Footer */
 
 footer {
   position: relative;
+  display: block;
+  width: 100%;
+  color: $white;
+  background-color: $darkGrey;
+  padding-top: 50px;
+
+  .footer-text {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    padding-left: 50px;
+
+    .contact, .stay-connected {
+      width: 40%;
+      text-align: left;
+
+      h4 {
+        padding-bottom: 10px;
+      }
+
+      ul {
+        font-size: 16px;
+
+        li {
+          padding-bottom: 10px;
+
+          a:not(:hover) {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .contact ul {
+      padding-left: 15px;
+    }
+
+    .stay-connected ul {
+      padding-left: 30px;
+    }
+  }
+
+  hr {
+    border-color: #666;
+  }
+
+  .copyright {
+    padding: 10px;
+
+    p {
+      display: inline-block;
+      padding-left: 40px;
+      line-height: 35px;
+    }
+
+    .scroll {
+      background-image: url("../../Assets/img/backtotop.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+      float: right;
+      margin-left: auto;
+      margin-right: 20px;
+      height: 40px;
+      width: 40px;
+    }
+  }
 }

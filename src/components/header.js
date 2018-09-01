@@ -7,7 +7,7 @@ class Header extends Component {
       <header>
         <div className="logo">
           <Link to="/">
-            <img src={require("../../Assets/img/cheesewheel.png")}></img>
+            <img src={require("../Assets/img/cheesewheel.png")} alt="logo"></img>
           </Link>
         </div>
         <div className="header-name">
