@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-
+import { Player } from 'video-react';
+import "../../../node_modules/video-react/dist/video-react.css";
 
 import Resume from '../../Assets/DannyLanResume.pdf'
 import ProjectsCarousel from "../projectsCarousel.js"
@@ -25,10 +26,32 @@ class Homepage extends Component {
           <h1>About Me</h1>
 
           <p>&emsp;&emsp;Hi, my name is Danny Lan and I am a second year student studying Computer Science and Business Administration at the University of Waterloo and Wilfrid Laurier University. I am interested in mobile and web development, and have created apps and games for iOS, Android, and the Web. In my free time, I like to draw, play acoustic guitar and ukulele, and game. I also involve myself in theatre.</p>
-          <NavLink to={Resume} target='_blank' className=' btn  btn-outline-dark btn-lg nav-link'>See Resume</NavLink>
+          <NavLink to={Resume} target='_blank' className='btn btn-lg nav-link'>See Resume</NavLink>
         </div>
 
-        <ProjectsCarousel />
+        <div className="media">
+          <ProjectsCarousel class="carousel" />
+        </div>
+
+        <div className="container project-row">
+          <div className="container project">
+            aa
+          </div>
+          <div className="container project">
+            aa
+          </div>
+          <div className="container project">
+            aa
+          </div>
+        </div>
+
+        <div className="media">
+          <Player
+            playsInline
+            poster={require("../../Assets/img/nightcover2.png")}
+            src="http://www.dannylandev.com/wp-content/uploads/2018/05/NightBall.mp4"
+          />
+      </div>
       </div>
     );
   }

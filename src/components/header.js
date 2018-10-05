@@ -1,37 +1,51 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem, } from 'react-bootstrap';
 
 class Header extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
-      <header style={this.props.homepage ? {"backgroundColor": "rgba(0,0,0,0)"} : {"backgroundColor": "rgba(0,0,0,1)"}}>
-        <div className="logo" onClick={() => this.props.handler(this, true)}>
-          <Link to="/">
-            <img src={require("../Assets/img/cheesewheel.png")} alt="logo"></img>
-          </Link>
-        </div>
-        <div className="header-name">
-          <h3>
-            Danny Lan
-          </h3>
-          <h6>
-            UWaterloo CS Student
-          </h6>
-        </div>
-
-        <nav>
-          <ul>
-            <li className="first" onClick={() => this.props.handler(this, true)}><Link to="/">Home</Link></li>
-            <li onClick={() => this.props.handler(this, false)}><Link to="/About">About</Link></li>
-            <li onClick={() => this.props.handler(this, false)}><Link to="/Blog">Blog</Link></li>
-            <li onClick={() => this.props.handler(this, false)}><Link to="/Projects">Projects</Link></li>
-            <li className="last" onClick={() => this.props.handler(this, false)}><Link to="/Contact">Contact</Link></li>
-          </ul>
-        </nav>
+      <header>
+        <Navbar inverse collapseOnSelect className="header">
+          <Navbar.Header>
+            <Navbar.Brand>
+              <div className="logo">
+                <Link to="/">
+                  <img src={require("../Assets/img/cheesewheel.png")} alt="logo"></img>
+                </Link>
+              </div>
+              <Link to="/">
+                <div className="header-name">
+                  <h3>
+                    Danny Lan
+                  </h3>
+                  <h6>
+                    UWaterloo CS Student
+                  </h6>
+                </div>
+            </Link>
+            </Navbar.Brand>
+            <Navbar.Toggle/>
+          </Navbar.Header>
+            <Nav pullRight>
+              <NavItem eventKey={1} href="/">
+                Home
+              </NavItem>
+              <NavItem eventKey={2} href="/about">
+                About
+              </NavItem>
+              <NavDropdown eventKey={3} title="Projects" id="basic-nav-dropdown">
+                <MenuItem eventKey={3.1} href="/Projects/NightBall">NightBall</MenuItem>
+                <MenuItem eventKey={3.2} href="/Projects/BetterPD">BetterPD/EmployAbility</MenuItem>
+                <MenuItem eventKey={3.3} href="/Projects/Altocumulus">Altocumulus Industries</MenuItem>
+                <MenuItem divider />
+                <MenuItem eventKey={3.3}>In Progress</MenuItem>
+              </NavDropdown>
+              <NavItem eventKey={2} href="/contact">
+                Contact
+              </NavItem>
+            </Nav>
+        </Navbar>
       </header>
     );
   }

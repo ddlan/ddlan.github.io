@@ -2,47 +2,40 @@
 
 /* header.js */
 
-header {
+.header {
   position: relative;
-  display: block;
+  display: inline;
   width: 100%;
-  background-color: rgba(0,0,0,0);
-  color: $white;
-  height: 90px;
+  background-color: rgba(1,0,0,1);
+  color: $black;
+  //height: 120px;
 
   .logo {
     position: relative;
-    display: inline-block;
-    left: 20px;
-    @include translateY(-20%);
-  }
+    display: inline;
+    top: -50px;
 
-  img {
-    width: 50px;
-    height: 50px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   .header-name {
     position: relative;
     display: inline-block;
+    top: -35px;
     margin-left: 35px;
-    top: 50%;
-    @include translateY(-50%);
+
+    color: inherit;
   }
 }
 
-nav, nav ul, nav ul li {
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  position: absolute;
-  top: 50%;
+.nav {
+  position: relative;
   right: 15px;
-  @include translateY(-70%);
 
-  ul li {
+  .nav-item {
     list-style-type: none;
     display: inline-block;
     margin-right: 20px;
@@ -65,6 +58,7 @@ nav {
   display: inline-block;
 
   .splash {
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     width: 100%;
     height: 800px;
@@ -79,7 +73,7 @@ nav {
     .splash-text {
       position: relative;
       width: 100%;
-      padding-top: 370px;
+      padding-top: 350px;
       color: white;
       text-align: center;
       font-size: 54px;
@@ -87,7 +81,7 @@ nav {
     }
 
     .slant {
-      margin-top: 58px;
+      margin-top: 82px;
 
       polygon {
         fill: $white;
@@ -97,7 +91,7 @@ nav {
     .splash-face {
       position: relative;
       display: block;
-      margin-top: -280px;
+      margin-top: -320px;
       margin-left: auto;
       margin-right: auto;
       width: 240px;
@@ -119,31 +113,43 @@ nav {
     z-index: 2;
 
     h1 {
+      margin-bottom: 20px;
       text-align: center;
       z-index: 3;
     }
 
+    p {
+      margin-bottom: 20px;
+    }
+
     .nav-link {
-      background-color: $lightGrey;
+      background-color: $midGrey;
+      color: $lightGrey;
       display: block;
       margin: 0 auto;
       width: 160px;
-    }
-  }
 
-  .carousel {
-    height: 500px;
-
-    div {
-      display: inline-block;
-      img {
-        height: 100%;
-        display: inline-block;
-        vertical-align: middle;
-        background-position: center;
+      &:hover {
+        color: $white;
       }
     }
   }
+
+  .media {
+    margin: 50px auto;
+    width: 95%;
+
+  }
+
+  .project-row {
+    display: flex;
+    text-align: center;
+
+    .project {
+      display: inline-flex;
+    }
+  }
+
 }
 
 .slant {
