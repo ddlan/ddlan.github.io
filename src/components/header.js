@@ -28,21 +28,27 @@ class Header extends Component {
             <Navbar.Toggle/>
           </Navbar.Header>
             <Nav pullRight>
-              <NavItem eventKey={1} href="/">
-                Home
+              <NavItem eventKey={1}>
+                <Link to="/">Home</Link>
               </NavItem>
-              <NavItem eventKey={2} href="/about">
-                About
+              <NavItem eventKey={2}>
+                <Link to="/about">About</Link>
               </NavItem>
               <NavDropdown eventKey={3} title="Projects" id="basic-nav-dropdown">
-                <MenuItem eventKey={3.1} href="/Projects/NightBall">NightBall</MenuItem>
-                <MenuItem eventKey={3.2} href="/Projects/BetterPD">BetterPD/EmployAbility</MenuItem>
-                <MenuItem eventKey={3.3} href="/Projects/Altocumulus">Altocumulus Industries</MenuItem>
+                <MenuItem eventKey={3.1}>
+                  <Link to="/projects/NightBall">NightBall</Link>
+                </MenuItem>
+                <MenuItem eventKey={3.2}>
+                  <Link to="/projects/BetterPD">BetterPD/EmployAbility</Link>
+                </MenuItem>
+                <MenuItem eventKey={3.3}>
+                  <Link to="/projects/Altocumulus">Altocumulus Industries</Link>
+                </MenuItem>
                 <MenuItem divider />
                 <MenuItem eventKey={3.3}>In Progress</MenuItem>
               </NavDropdown>
-              <NavItem eventKey={2} href="/contact">
-                Contact
+              <NavItem eventKey={2}>
+                <Link to="/Contact">Contact</Link>
               </NavItem>
             </Nav>
         </Navbar>
