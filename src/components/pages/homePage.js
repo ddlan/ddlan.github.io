@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Player } from 'video-react';
-import "../../../node_modules/video-react/dist/video-react.css";
+import '../../../node_modules/video-react/dist/video-react.css';
 
-import Resume from '../../Assets/DannyLanResume.pdf'
-import ProjectsCarousel from "../projectsCarousel.js"
+import Resume from '../../Assets/DannyLanResume.pdf';
+import ProjectsCarousel from '../projectsCarousel';
+import Header from '../header';
 
 class Homepage extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="home">
+        <Header />
         <div className="splash">
           <h1 className="splash-text">Developer. Designer. Danny.</h1>
           <svg className="slant" viewBox="0 0 1 1" preserveAspectRatio="none">
@@ -33,7 +31,7 @@ class Homepage extends Component {
           <ProjectsCarousel class="carousel" />
         </div>
 
-        <div className="container project-row">
+        {/*<div className="container project-row">
           <div className="container project">
             aa
           </div>
@@ -43,7 +41,7 @@ class Homepage extends Component {
           <div className="container project">
             aa
           </div>
-        </div>
+        </div>*/}
 
         <div className="media">
           <Player
