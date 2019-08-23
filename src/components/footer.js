@@ -11,7 +11,7 @@ class Footer extends Component {
             <ul className="list-unstyled">
               <li>Richmond Hill, Canada</li>
               <li>(647)-609-5406</li>
-              <li>L.danny18725@gmail.com</li>
+              <li><a href="mailto:L.danny18725@gmail.com" target="_top">L.danny18725@gmail.com</a></li>
             </ul>
           </div>
           <div className="stay-connected">
@@ -28,7 +28,7 @@ class Footer extends Component {
         <hr></hr>
 
         <div className="copyright">
-          <p>Danny Lan 2018</p>
+          <p>Danny Lan 2019</p>
           <ScrollButton scrollStepInPx="50" delayInMs="16.66"/>
         </div>
 

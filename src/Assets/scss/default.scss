@@ -99,7 +99,7 @@ header {
       margin-top: -320px;
       margin-left: auto;
       margin-right: auto;
-      width: 240px;
+      width: 230px;
       height: 300px;
       border: 6px solid #eee;
       border-radius: 10px;
@@ -142,8 +142,8 @@ header {
 
   .media {
     margin: 50px auto;
+    height: 500px;
     width: 95%;
-
   }
 
   .project-row {
@@ -152,6 +152,18 @@ header {
 
     .project {
       display: inline-flex;
+    }
+  }
+
+  .promo {
+    margin: 10px 0;
+    text-align: center;
+
+    .promo-video {
+      display: block;
+      margin: 30px auto;
+      width: 287px;
+      height: 480px;
     }
   }
 

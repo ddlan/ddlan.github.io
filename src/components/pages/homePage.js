@@ -17,13 +17,13 @@ class Homepage extends Component {
           <svg className="slant" viewBox="0 0 1 1" preserveAspectRatio="none">
             <polygon points="0,1 1,1 1,0"></polygon>
           </svg>
-          <img className="splash-face" src={require("../../Assets/img/smalleruke.jpg")} alt="Me!"></img>
+          <img className="splash-face" src={require("../../Assets/img/sfcoolcrop.jpg")} alt="Me!"></img>
 
         </div>
         <div className="container-fluid home-about">
           <h1>About Me</h1>
 
-          <p>&emsp;&emsp;Hi, my name is Danny Lan and I am a second year student studying Computer Science and Business Administration at the University of Waterloo and Wilfrid Laurier University. I am interested in mobile and web development, and have created apps and games for iOS, Android, and the Web. In my free time, I like to draw, play acoustic guitar and ukulele, and game. I also involve myself in theatre.</p>
+          <p>&emsp;&emsp;Hi, my name is Danny Lan and I am a third year student studying Computer Science and Business Administration at the University of Waterloo and Wilfrid Laurier University. I am interested in mobile and web development, and have created apps and games for iOS, Android, and the Web. In my free time, I like to draw, play acoustic guitar and ukulele, and game. I also involve myself in theatre.</p>
           <NavLink to={Resume} target='_blank' className='btn btn-lg nav-link'>See Resume</NavLink>
         </div>
 
@@ -43,13 +43,13 @@ class Homepage extends Component {
           </div>
         </div>*/}
 
-        <div className="media">
-          <Player
-            playsInline
-            poster={require("../../Assets/img/nightcover2.png")}
-            src="http://www.dannylandev.com/wp-content/uploads/2018/05/NightBall.mp4"
-          />
-      </div>
+        <div className="promo">
+          <h1>NightBall Promotional Video</h1>
+          <video className="promo-video" controls>
+            <source src={require("../../Assets/vid/NightBallCrop2.mp4")} type="video/mp4" />
+          Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     );
   }
