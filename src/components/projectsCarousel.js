@@ -11,7 +11,7 @@ class ProjectsCarousel extends Component {
         return (
           <Carousel>
             <Carousel.Item>
-              <img width={2500} height={500} alt="BetterPD/EmployAbility" src={require("../Assets/img/loologo.png")} />
+              <img width={2500} height={500} alt="BetterPD/EmployAbility" src={require("../Assets/img/loologo.jpg")} />
               <Link to="/Projects/BetterPD">
                 <Carousel.Caption style={capStyle}>
                   <h3>BetterPD/EmployAbility</h3>
