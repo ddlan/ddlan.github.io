@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { Player } from 'video-react';
-import '../../../node_modules/video-react/dist/video-react.css';
+import { NavLink } from 'react-router-dom';
 
 import Resume from '../../Assets/DannyLanResume.pdf';
 import ProjectsCarousel from '../projectsCarousel';

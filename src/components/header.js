@@ -33,19 +33,19 @@ class Header extends Component {
               </NavItem>
               <NavDropdown eventKey={2} title="Projects" id="basic-nav-dropdown">
                 <MenuItem eventKey={2.1}>
-                  <Link to="/projects/NightBall">NightBall</Link>
+                  <Link to="/Projects/NightBall">NightBall</Link>
                 </MenuItem>
                 <MenuItem eventKey={2.2}>
-                  <Link to="/projects/BetterPD">BetterPD/EmployAbility</Link>
+                  <Link to="/Projects/BetterPD">BetterPD/EmployAbility</Link>
                 </MenuItem>
                 <MenuItem eventKey={2.3}>
-                  <Link to="/projects/Altocumulus">Altocumulus Industries</Link>
+                  <Link to="/Projects/Altocumulus">Altocumulus Industries</Link>
                 </MenuItem>
                 <MenuItem divider />
                 <MenuItem eventKey={2.4}>In Progress</MenuItem>
               </NavDropdown>
               <NavItem eventKey={1}>
-                <Link to="/music">Music</Link>
+                <Link to="/Music">Music</Link>
               </NavItem>
               <NavItem eventKey={4}>
                 <Link to="/Contact">Contact</Link>
