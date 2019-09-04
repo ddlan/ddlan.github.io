@@ -43,12 +43,10 @@ header {
       &.last {
         margin: 0;
       }
+    }
 
-      a {
-        font-size: 19px;
-        line-height: normal;
-        color: $white;
-      }
+    .dropdown-entry {
+      margin-left: 2px;
     }
   }
 }
@@ -99,7 +97,6 @@ header {
       margin-top: -320px;
       margin-left: auto;
       margin-right: auto;
-      width: 230px;
       height: 300px;
       border: 6px solid #eee;
       border-radius: 10px;
@@ -173,6 +170,23 @@ header {
   position: relative;
   width: 100%;
   height: 300px;
+}
+
+/* Music */
+
+.music {
+  .container-fluid {
+    margin: 20px;
+    padding-top: 10px;
+    padding-left: 25px;
+    background-color: #EEEBEE;
+    border-radius: 25px;
+
+    .music-video {
+      margin: 10px;
+      width: 80%;
+    }
+  }
 }
 
 /* NotFound */
