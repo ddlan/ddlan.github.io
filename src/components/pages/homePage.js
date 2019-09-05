@@ -21,7 +21,7 @@ class Homepage extends Component {
         <div className="container-fluid home-about">
           <h1>About Me</h1>
 
-          <p>&emsp;&emsp;Hi, my name is Danny Lan and I am a third year student studying Computer Science and Business Administration at the University of Waterloo and Wilfrid Laurier University. I am interested in mobile and web development, and have created apps and games for iOS, Android, and the Chrome Web Store. In my free time, I play the acoustic guitar, bass, and ukulele. I do Muay Thai and enjoy going to the gym. I also involve myself in theatre.</p>
+          <p>&emsp;&emsp;Hi, my name is Danny Lan and I am a third year student studying Computer Science and Business Administration at the University of Waterloo and Wilfrid Laurier University. I am interested in mobile and web development, and have created apps and games for iOS, Android, and the Chrome Web Store. In my free time, I play the acoustic guitar, bass, and ukulele. I do Muay Thai and go to the gym regularly. I also involve myself in theatre.</p>
           <NavLink to={Resume} target='_blank' className='btn btn-lg nav-link'>See Resume</NavLink>
         </div>
 
