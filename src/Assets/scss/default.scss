@@ -216,7 +216,7 @@ header {
 
 /* Project */
 
-.project {
+.project-page {
   @media screen and (min-width: 601px) {
       max-width: 80%;
 
@@ -238,6 +238,12 @@ header {
   margin: 30px auto 60px auto;
   width: 1000px;
   text-indent: 50px;
+
+  .link-area {
+    display: flex;
+    margin: 50px 0;
+    justify-content: center;
+  }
 }
 
 /* Music */
