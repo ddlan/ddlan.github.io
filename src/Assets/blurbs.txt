@@ -1,0 +1,44 @@
+About Me
+
+Hi, my name is Danny Lan and I am a third year student studying Computer Science and Business Administration at the University of Waterloo and Wilfrid Laurier University. I am interested in mobile and web development, and have created apps and games for iOS, Android, and the Chrome Web Store. In my free time, I play the acoustic guitar, bass, and ukulele. I do Muay Thai and go to the gym regularly. I also involve myself in theatre.
+
+InCite
+
+InCite is a Google Chrome extension I developed in collaboration with a graphic designer and another software developer. InCite allows you to generate a citation for your current webpage in MLA, APA, Chicago, or Harvard citation styles at the click of a button. You can save multiple bibliographies and copy the bibliography to your clipboard.
+
+InCite was built using React and MobX. It uses a metascraper package created by metrolink to get citation information from the current webpage. InCite then processes the information into a citation that can be edited later as needed. InCite uses local storage to persist bibliographies. Future planned updates include shared bibliographies and support for citations of non-web sources.
+
+Working on InCite taught me the importance of setting clear timelines and goals to keep progress moving steadily. Coordinating the team was a challenge because during development we were all living in different places, so working remotely was the only option. It became easy to deprioritize working on InCite when there were also assignments, midterms, exams, and job applications to worry about. However, after we decided to have biweekly video chat meetings, our progress increased slowly and steadily until we finished the project. The use of consistent meetings helped to set goals for the next period, and to ensure we always made our way one step closer to the finished product, as no one wants to show up to the meeting without having made any progress. In the end, the development cycle took around 10 months, and I am very satisfied with the end product.
+
+NightBall
+
+NightBall is a mobile game I created with a fellow developer for iOS and Android. Gameplay involves tapping on the screen to rotate the "NightBall" in the middle of the screen to match the colour of the ball to the colour of stars that fly onto the screen. The iOS version supports multiple game modes, Game Centre integration, and in-app purchases.
+
+NightBall iOS was built from the ground up using Swift, SpriteKit, and StoreKit. NightBall leverages SpriteKit for the game engine and uses StoreKit to support in-app purchases to unlock the new game mode faster. Game Centre allows users to compare their score on a global and local leaderboard. NightBall Android was built using the GameMaker Studio engine, and uses GameMaker Studio's own native programming language.
+
+NightBall was my first major project outside of school, and so I learned a great deal working on NightBall with a partner. My main takeaways from working on this game was the importance of dutiful source control and good documentation. We occasionally found ourselves in a situtation where both of us would concurrently work on the same section of code, and thus would end up with merge conflicts and no shortage of headaches in moving forward with both of our changes. Through the use of open communication and branches, we were able to consolidate changes that both of us made without running into merge conflicts. Clear documentation was another important part of NightBall. Because we decided to update NightBall to support a new game mode and other features, we had to revisit code that we had not touched in several months. It became clear that parts of the code that were more complex or less intuitive were much easier to revisit when they had comments clarifying their implementation or usage. Thus, part of updating NightBall involved combing through the code and adding helpful comments when needed so we could work on NightBall later if we so choosed without too much hassle.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

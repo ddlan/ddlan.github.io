@@ -32,11 +32,11 @@ class Header extends Component {
                 <Link to="/">Home</Link>
               </NavItem>
               <NavDropdown eventKey={2} title="Projects" id="basic-nav-dropdown">
-                <MenuItem eventKey={2.1} href="/Projects/NightBall">
-                  <Link to="/Projects/NightBall">NightBall</Link>
+                <MenuItem eventKey={2.1} href="/Projects/InCite">
+                  <Link to="/Projects/InCite">InCite</Link>
                 </MenuItem>
-                <MenuItem eventKey={2.2} href="/Projects/BetterPD">
-                  <Link to="/Projects/BetterPD">BetterPD/EmployAbility</Link>
+                <MenuItem eventKey={2.2} href="/Projects/NightBall">
+                    <Link to="/Projects/NightBall">NightBall</Link>
                 </MenuItem>
                 <MenuItem eventKey={2.3} href="/Projects/Altocumulus">
                   <Link to="/Projects/Altocumulus">Altocumulus Industries</Link>

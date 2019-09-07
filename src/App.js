@@ -6,7 +6,7 @@ import Footer from './components/footer';
 import Homepage from './components/pages/homePage';
 import Projects from './components/pages/projects';
 import NightBall from './components/pages/projects/nightball';
-import BetterPD from './components/pages/projects/betterpd';
+import InCite from './components/pages/projects/incite';
 import Altocumulus from './components/pages/projects/altocumulus';
 import Music from './components/pages/music';
 import NotFound from './components/pages/notFound';
@@ -23,8 +23,8 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route exact path="/Projects/" component={Projects} />
+            <Route exact path="/Projects/InCite/" component={InCite} />
             <Route exact path="/Projects/NightBall/" component={NightBall} />
-            <Route exact path="/Projects/BetterPD/" component={BetterPD} />
             <Route exact path="/Projects/Altocumulus/" component={Altocumulus} />
             <Route exact path="/Music/" component={Music} />
             <Route path="*" component={NotFound} />

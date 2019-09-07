@@ -11,16 +11,16 @@ class ProjectsCarousel extends Component {
         return (
           <Carousel>
             <Carousel.Item>
-              <img width={2500} height={500} alt="BetterPD/EmployAbility" src={require("../Assets/img/loologo.jpg")} />
-              <Link onClick={this.forceUpdate} to="/Projects/BetterPD">
+              <img alt="InCite" src={require("../Assets/img/incitebanner.png")} />
+              <Link onClick={this.forceUpdate} to="/Projects/InCite">
                 <Carousel.Caption style={capStyle}>
-                  <h3>BetterPD/EmployAbility</h3>
-                  <p>Job search preparation for the busy university student. (Python, Flask, MySQL)</p>
+                  <h3>InCite</h3>
+                  <p>Citations on the fly. One click citations right in your browser. (React, Mobx, JS)</p>
                 </Carousel.Caption>
               </Link>
             </Carousel.Item>
             <Carousel.Item>
-              <img width={2500} height={500} alt="NightBall" src={require("../Assets/img/nightcover.png")} />
+              <img alt="NightBall" src={require("../Assets/img/nightcover.png")} />
               <Link onClick={this.forceUpdate} to="/Projects/NightBall">
                 <Carousel.Caption style={capStyle}>
                   <h3>NightBall</h3>
@@ -29,7 +29,7 @@ class ProjectsCarousel extends Component {
               </Link>
             </Carousel.Item>
             <Carousel.Item>
-              <img width={2500} height={500} alt="Altocumulus Industries" src={require("../Assets/img/altocumulus.jpg")} />
+              <img alt="Altocumulus Industries" src={require("../Assets/img/altocumulus.jpg")} />
               <Link onClick={this.forceUpdate} to="/Projects/Altocumulus">
                 <Carousel.Caption style={capStyle}>
                   <h3>Altocumulus Industries</h3>
