@@ -237,12 +237,23 @@ header {
   display: block;
   margin: 30px auto 60px auto;
   width: 1000px;
-  text-indent: 50px;
+
+  p {
+    text-indent: 50px;
+  }
 
   .link-area {
     display: flex;
     margin: 50px 0;
     justify-content: center;
+
+    a {
+      margin: 0 25px;
+    }
+
+    .demo-button {
+      padding: 22px 25px 0 25px;
+    }
   }
 }
 

@@ -33,7 +33,7 @@ class ProjectsCarousel extends Component {
               <Link onClick={this.forceUpdate} to="/Projects/Altocumulus">
                 <Carousel.Caption style={capStyle}>
                   <h3>Altocumulus Industries</h3>
-                  <p>Machine Learning Facial Recognition to find friends in a crowd. (Python/AWS)</p>
+                  <p>Machine learning facial recognition to find friends in a crowd. (Python/AWS)</p>
                 </Carousel.Caption>
               </Link>
             </Carousel.Item>
