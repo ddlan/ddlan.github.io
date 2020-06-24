@@ -28,7 +28,7 @@ class Footer extends Component {
         <hr></hr>
 
         <div className="copyright">
-          <p>Danny Lan 2019</p>
+          <p>Danny Lan 2020</p>
           <ScrollButton scrollStepInPx="50" delayInMs="16.66"/>
         </div>
 
