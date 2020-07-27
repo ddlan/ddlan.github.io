@@ -5,7 +5,6 @@
   "homepage": "https://ddlan.github.io/",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "gh-pages": "^2.0.1",
     "gulp-changed": "^3.2.0",
     "gulp-clean-css": "^3.9.4",
     "gulp-rename": "^1.4.0",
@@ -29,9 +28,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "gulp": "^3.9.1"
   }
 }
