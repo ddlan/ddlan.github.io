@@ -261,15 +261,27 @@ header {
 
 .music {
   .container-fluid {
-    margin: 20px;
-    padding-top: 10px;
-    padding-left: 25px;
+    margin: 40px;
+    padding: 20px 30px;
     background-color: #EEEBEE;
-    border-radius: 25px;
+    border-radius: 15px;
 
-    .music-video {
-      margin: 10px;
-      width: 80%;
+    .video-mask {
+      margin: 25px 10px;
+      height: 504px;
+      width: 896px;
+      border-radius: 5px; 
+      overflow: hidden; 
+
+      .music-video {
+        height: inherit;
+        width: inherit;
+      }
+    }
+
+    p {
+      margin: 20px;
+      text-align: justify;
     }
   }
 }
