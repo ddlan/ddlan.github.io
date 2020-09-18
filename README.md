@@ -1,5 +1,5 @@
 # ddlan.github.io
-This is Danny Lan's personal website, created using React, Gulp, Sass, and hard work.
+This is Danny Lan's personal website, created using React, Node, Gulp, Sass, and hard work.
 
 
 ### Deployment instructions (for myself)
